@@ -1,3 +1,11 @@
+<!-- 이 파일은 html 기초 강의에서 작성된 코드를 기반으로 한 css 실습입니다. -->
+<!-- 현재는 기본적인 문법 공부와 연습을 위한 목적으로 어느정도 실습이 끝난 후, UI 수정 예정 -->
+<!-- 강의 : 2022 The Web Developer 부트캠프 (Udemy) -->
+<!-- 코드 작성자 : So Hyeon Park -->
+<!-- 코드 작성일 : 2022.5.19 -->
+<!-- 코드 업데이트 : 2022.5.20 -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head> 
@@ -5,6 +13,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoHyeon's DREAM LAB</title> 
+    <link rel="stylesheet" href="first_css.css">
+    <!-- 외부 css 파일과 연결하는 방법 이용 -->
+    <!-- inline/<style>을 사용하는 방법은 추천하지 않는 방법임. -->
 </head>
 <body> 
     <h1>&hearts; &Wopf;&eopf;&lopf;&copf;&oopf;&mopf;&eopf; &topf;&oopf; &mopf;&yopf; &Copf;&Oopf;&Dopf;&Eopf; &Wopf;&Oopf;&Ropf;&Lopf;&Dopf; &hearts;</h1>
@@ -18,11 +29,8 @@
     <form action="/search">
         <label for="search">다른 프로젝트가 궁금하다면?</label>
         <input type="text" placeholder="프로젝트를 검색해보세요!" id="search" name="projectname">
-        <!-- 속성 name은 서버로 데이터를 전송할 때 사용되므로 매우 중요함 -->
         <button type="submit">GO!</button>
     </form>
-
-    
     <br> 
     <main>
     <p>안녕하세요. 저는 박소현이라고 합니다. 나이는 25살이고, 웹과 꿈 두마리 토끼를 모두 개발하는 것이 목표입니다. 
@@ -45,9 +53,8 @@
         </tr>
         <tbody>
         <tr>
-        <td>1</td>
-        <td>포트폴리오 사이트 제작</td>
-        <!-- 추후 여러가지 프로젝트를 진행했을 경우, 해당 프로젝트의 이미지를 a태그와 연결지어 사용할 예정이다.  -->
+            <td>1</td>
+            <td>포트폴리오 사이트 제작</td>
         </tr>
         <tr>
             <td>2</td>
@@ -55,7 +62,6 @@
         </tr>
         </tbody>
     </table>
-
 </body>
 </html>
 
