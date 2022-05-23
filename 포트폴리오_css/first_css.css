@@ -1,7 +1,74 @@
-h1 {
-    color : palevioletred;
+html{
+    background-color: #FFFADE;
+}
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+#home{
+    height: 300px;
+    font-size: 100px;
+    padding-top: 12%;
     text-align: center;
-    font-weight: bold;
-    letter-spacing: 7px;
+    background-color: #FFFADE;
+    font-family: 'Cafe24Ssurround';
+}
+.custom-shape-divider-top-1653317526 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
 }
 
+.custom-shape-divider-top-1653317526 svg {
+    position: relative;
+    display: block;
+    width: calc(137% + 1.3px);
+    height: 167px;
+}
+
+.custom-shape-divider-top-1653317526 .shape-fill {
+    fill: #FFDDE1;
+}
+
+#home a{
+    color:#FFA7B0;
+    text-decoration: none;
+}
+nav{
+    padding: 5%;
+    font-size: 1.2rem;
+}
+#intro{
+    font-family: 'Cafe24Ssurround';
+    display: inline;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family:
+}
+#intro a:hover{
+    color: #007673;
+}
+#project{
+    font-family: 'Cafe24Ssurround';
+    display: inline;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#project a:hover{
+    color:#007673;
+}
+#contact{
+    font-family: 'Cafe24Ssurround';
+    display: inline;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#contact a:hover{
+    color:#007673;
+}
