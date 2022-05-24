@@ -1,10 +1,12 @@
 <!-- 이 파일은 html 기초 강의에서 작성된 코드를 기반으로 한 css 실습입니다. -->
-<!-- 현재는 기본적인 문법 공부와 연습을 위한 목적으로 어느정도 실습이 끝난 후, UI 수정 예정 -->
+<!-- 현재는 기본적인 문법 공부와 연습을 위한 목적으로 실습과 함께 UI 수정 중에 있습니다 -->
 <!-- 강의 : 2022 The Web Developer 부트캠프 (Udemy) -->
 <!-- 코드 작성자 : So Hyeon Park -->
 <!-- 코드 작성시작일 : 2022.5.19 -->
-<!-- 코드 업데이트 : 2022.5.23 -->
-
+<!-- 코드 업데이트 : 2022.5.25 -->
+<!-- 업데이트 내용 : UI 수정하고 메인 페이지에 프로젝트 이미지 추가
+현재 완성작이 없는 관계로 외부 이미지를 사용하여 대체함 -->
+<!-- 이미지에 마우스 hover할 경우, 텍스트를 공개하는 효과주는 과정에서 오류발생했으므로 수정방법을 찾아야함 -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,27 +16,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoHyeon's DREAM LAB</title> 
     <link rel="stylesheet" href="포트폴리오_css/first_css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 </head>
 <body> 
-    <!-- 깔끔한 디자인을 위해 svg 추가-->
-    <div class="custom-shape-divider-top-1653317526">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-        </svg>
-    </div>
-    <div id="home">
-        <a href="포트폴리오_html.html">So Hyeon's LAB</a>
-        <nav> 
-            <div id="intro"><a href="본인소개.html">본인소개</a></div>
-            <div id="project"><a href="프로젝트.html">프로젝트</a></div>
-            <div id="contact"><a href="연락처.html">연락처</a></div>
-        </nav>
+    <div id="nav">
+        <a href="포트폴리오_html.html" class="home">So Hyeon's LAB</a>
+        <a href="본인소개.html" class="intro">본인소개</a>
+        <a href="프로젝트.html" class="project">프로젝트</a>
+        <a href="연락처.html" class="contact">연락처</a>
     </div>
     
+<main>
+    <div id="img1">
+        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169">
+        <div class="pj">
+            <p>Project 1</p>
+        </div>
+    </div>
+    <div id="img2">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172">
+        <div class="pj">
+            <p>Project 2</p>
+        </div>
+    </div>
+    <div id="img3">
+        <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170">
+        <div class="pj">
+            <p>Project 3</p>
+        </div>
+    </div>
     
-    <br> 
-    <main>
-   
+</main>
 </body>
 </html>
 
