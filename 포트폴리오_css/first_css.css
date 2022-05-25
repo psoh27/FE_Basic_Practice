@@ -1,8 +1,6 @@
 html{
     background-color: #FFF5FF;
 }
-
-
 /* 상업적 사용이 가능한 폰트를 사용했습니다. */
 @font-face {
     font-family: 'Cafe24SsurroundAir';
@@ -10,24 +8,40 @@ html{
     font-weight: large;
     font-style: normal;
 }
-#nav{
-    /* display: inline; */
-    position: relative;
-    width: 100%;
-    background-color: none;
-    font-family: 'Cafe24Ssurround';
-    margin-top: 3%;
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+    
 }
 .home{
     font-family: 'Raleway', sans-serif;
     word-spacing: -0.2em;
     font-size: 60px;
-    padding :2em 2em 0 2em;
     color:#FFA7B0;
     text-decoration: none;
 }
+ul{
+    display: flex;
+    flex: 1;
+    max-width: 40%;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+}
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* text-align: center; */
+}
+li,a.intro, a.project, a.contact{
+    margin: 1em;
+    display: flex;
+    justify-content: space-evenly;
+}
 .intro{
-    padding: 1em 4em 0em 4em;
+    /* padding: 2em 4em 0em 4em; */
     text-decoration: none;
     color: #263350;
     font-family: 'Cafe24SsurroundAir';
@@ -37,7 +51,7 @@ html{
     text-shadow: 1px 1px 1px #6276A9; 
 }
 .project{
-    padding: 1em 4em 0em 4em;
+    /* padding: 2em 4em 0em 4em; */
     text-decoration: none;
     color: #263350;
     font-family: 'Cafe24SsurroundAir';
@@ -47,7 +61,7 @@ html{
     text-shadow: 1px 1px 1px #6276A9;
 }
 .contact{
-    padding: 1em 4em 0em 4em;
+    /* padding: 2em 4em 0em 4em; */
     text-decoration: none;
     color: #263350;
     font-family: 'Cafe24SsurroundAir';
@@ -55,6 +69,32 @@ html{
 .contact:hover{
     transition: text-shadow, 0.7s;
     text-shadow: 1px 1px 1px #6276A9;
+}
+@media (max-width:914px){
+    li{
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 30%;
+    }
+}
+@media (max-width:790px){
+    nav{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    li{
+        max-width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        border-bottom: 1px solid #6276A9;
+        
+    }
+    ul{
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 
 main img:nth-of-type(1){
