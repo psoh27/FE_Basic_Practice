@@ -10,6 +10,13 @@
     font-weight: normal;
     font-style: normal;
 }
+
+h2{
+    font-family: GmarketSansMedium;
+}
+h2 span{
+    color:#324A51;
+}
 body{
     background-color: #B1EFFF;
 }
@@ -37,6 +44,9 @@ body{
 #navdrop .nav-link{
     font-family: "Montserrat", sans-serif;
 }
+.content{
+    margin-bottom: 100px;
+}
 .row.align-items-center{
     padding-top: 7rem;
 }
@@ -54,8 +64,35 @@ section .hl1-content:nth-of-type(1){
 #hl1-group span{
     color: #324A51;
 }
+#hl1-group{
+    margin-bottom: 100px;
+}
+.navbar.scrolled{
+    background:#96F8F8;
+    transition: background 0.3s;
+}
+@media (max-width:1200px){
+    .headline2{
+        font-size: 1.6rem;
+    }
+}
 @media (max-width:1000px){
     #hl1-group{
         font-size: 3rem;
     }
+    #hl2-group{
+        font-size: 3rem;
+    }
 }
+.lead{
+    font-family: "Cafe24SsurroundAir";
+    font-size: large;
+    padding-top: 1rem;
+}
+.d-none{
+    padding-top: 2rem;
+}
+#hl3-group p:last-of-type{
+    margin-bottom: 100px;
+}
+
